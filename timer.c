@@ -12,9 +12,10 @@ void handler(int signum)
 { //signal handler
   printf("Hello World!\n");
 	check = 1;
+	noOfAlarms ++;
 	
 }
-
+\
 void cancelHandler(int signum)
 { //signal handler
   printf("\n%d alarm(s) ran for %d second(s) \n",noOfAlarms, noOfSecs);
@@ -32,7 +33,6 @@ int main(int argc, char * argv[])
 			printf("Turing was right!\n");
 			check = 0;
 			alarm(1);
-			noOfAlarms ++;
 			noOfSecs++;}
 	};
   return 0; //never reached
