@@ -5,8 +5,6 @@
 #include <unistd.h>
 #include <time.h>
 
-clock_t start, end;
-double cpu_time_used;
 
 
 int check = 0;
